@@ -1,7 +1,7 @@
 # YATE-Fam
 Project for Web Application Development
 
-A planner and organizer web application for families.
+For when all family members have a busy schedule and want to be more in sync with each other, YATE-Fam is a planner and organizer web application for families. Main features include: common shopping list, event planning/scheduling, chores division.
 
 User stories:
 1. Family members can log their own shopping list items.
