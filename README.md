@@ -7,3 +7,4 @@ User stories:
 1. Family members can log their own shopping list items.
 2. Family members can notify the others about family events.
 3. Family members can check assigned chores and mark their status.
+4. Admin family member can add or remove other members.
