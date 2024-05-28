@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new shopping item</title>
+</head>
+<body>
+<!--action is by default POST /shoppingItems/new -->
+<form th:object="${shoppingItem}" method="post">
+    <label for="name">Name:</label><br>
+    <input th:field="*{name}" id="name" >
+   <br><label for="quantity">Quantity:</label><br>
+    <input th:field="*{quantity}" id="quantity" type="number" >
+    <br><label for="store">Store:</label><br>
+    <input th:field="*{store}" id="store">
+    <br><label for="importance">Item Importance:</label><br>
+    <select th:field="*{importance}" id="importance" name="importance">
+        <option value="must go">Must go!</option>
+        <option value="high priority">High Priority</option>
+        <option value="medium priority">Medium Priority</option>
+        <option value="optional">Optional</option>
+    </select>
+    <br><label for="Status">Status:</label>
+    <input th:field="*{status}" id="status" type="checkbox"><br>
+    <input type="submit">
+</form>
+</body>
+</html>

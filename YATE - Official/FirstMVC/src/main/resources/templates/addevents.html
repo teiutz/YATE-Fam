@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new event</title>
+</head>
+<body>
+<!--action is by default POST /events/new -->
+<form th:object="${event}" method="post">
+    <label for="name">Name:</label><br>
+    <input th:field="*{name}" id="name">
+    <br><label for="startDate">Start Date:</label><br>
+    <input th:field="*{startDate}" id = "startDate" type = "date" >
+    <br><label for="endDate">End Date:</label><br>
+    <input th:field="*{endDate}" id="endDate" type = "date" >
+    <br><label for="type">Event Type:</label><br>
+    <input th:field="*{type}" id = "type">
+    <br><label for="importance">Event Importance:</label><br>
+    <select th:field="*{importance}" id="importance" name="importance">
+        <option value="must go">Must go!</option>
+        <option value="high priority">High Priority</option>
+        <option value="medium priority">Medium Priority</option>
+        <option value="optional">Optional</option>
+    </select> <br><br>
+
+    <input type="submit">
+</form>
+</body>
+</html>
+
